@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+
+<h1>MNIT OLX</h1>
+
+<% for(var i=0; i < data_base.length; i++) { %>
+    <tr>
+      <!-- <h1><td><%= data_base[i].Title %></td></h1> -->
+      <!-- <br>
+      <td><%= data_base[i].Content %></td> -->
+      <a href="/<%= data_base[i].Title %>"><h1><%= data_base[i].Title %></h1></a>
+    </tr>
+ <% } %>
+
+<%- include('partials/footer'); -%>
