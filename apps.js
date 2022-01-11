@@ -1,11 +1,11 @@
 //jshint esversion:6
-
+const port = process.env.PORT || 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { redirect } = require("express/lib/response");
 const mongoose = require('mongoose'); 
-mongoose.connect('mongodb://localhost:27017/blogPost');
+mongoose.connect('mongodb+srv://marubozu:qwerty%40123@cluster0.cq1vx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 
 
@@ -86,6 +86,6 @@ app.get("/:post", function (req, res) {
 
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
