@@ -1,5 +1,5 @@
 //jshint esversion:6
-const port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
